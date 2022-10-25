@@ -53,7 +53,7 @@ $danger:        $bh-danger;
 /*$info:          $cyan;
 $light:         $gray-100;
 $dark:          $gray-900;*/
-
+$enable-negative-margins: true;
 // Required
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -99,11 +99,21 @@ $dark:          $gray-900;*/
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
+// Fonts
+@font-face {
+  font-family: RalewayRegular;
+  src: url('/static/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url('/static/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+}
 
 //
 // Custom styles
 //
 
-@import "icon-list";
 @import "utils";
 @import "nav";
+@import "icon-list";
