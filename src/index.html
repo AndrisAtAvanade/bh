@@ -3,29 +3,88 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>BLUE HOPE</title>
     <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="./js/main.js"></script>
 </head>
 <body>
 
-<header class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
-    <h1 class="h4">
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <img class="d-inline-block me-2" width="40" height="32"
-                 src="https://raw.githubusercontent.com/twbs/bootstrap/main/site/static/docs/5.2/assets/brand/bootstrap-logo-black.svg"
-                 alt="Bootstrap">
-            <span>Vite</span>
-        </a>
-    </h1>
-    <a href="https://github.com/twbs/examples/tree/main/vite/" target="_blank" rel="noopener">View on GitHub</a>
+<header class="bg-primary">
+    <section class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">BLUE HOPE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bh-main-nav"
+                    aria-controls="bh-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bh-main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Individuals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Guidance &amp; Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Just ask</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex py-5">
+            <div>
+                <h1>The No.1 Community for those who believe talent doesn't have borders</h1>
+                <a class="btn btn-light" href="#">Find out more</a>
+            </div>
+            <img src="./static/img/hero.jpg" alt="hero image"/>
+        </div>
+    </section>
 </header>
-
-<a id="popoverButton" class="text-success" href="#" role="button" data-bs-toggle="popover" title="Custom popover"
-   data-bs-content="This is a Bootstrap popover.">Example popover</a>
-
-
-<p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
+<section class="container">
+    <h2 class="text-center mt-5">How can we help?</h2>
+    <div class="row gx-md-3 gx-4 gap-3">
+        <div class="col-md text-center">
+            <div class="bg-white p-4">
+                <h3>Candidate tile title</h3>
+                <p>Etiam pharetra lacus sed urna ornare luctus. Sed rhoncus, purus quis vestibulum maximus, metus dui
+                    porta
+                    justo, ac hendrerit neque lectus id urna. </p>
+                <a class="btn btn-dark" href="#">Find out more</a>
+            </div>
+        </div>
+        <div class="col-md text-center">
+            <div class="bg-white p-4">
+                <h3>Business tile title</h3>
+                <p>Etiam pharetra lacus sed urna ornare luctus. Sed rhoncus, purus quis vestibulum maximus, metus dui
+                    porta
+                    justo, ac hendrerit neque lectus id urna. </p>
+                <a class="btn btn-dark" href="#">Find out more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-white">
+    <section class="container mt-5">
+        <div class="row gx-md-3 gx-4 gap-3">
+            <div class="col-md text-center">IMG</div>
+            <div class="col-md text-center">
+                <h3>Better together</h3>
+                <p>Maecenas laoreet tellus sit amet placerat posuere. Nulla rhoncus faucibus nunc, vel consectetur enim.
+                    Sed
+                    suscipit fermentum est, at luctus est pharetra eget. Integer in feugiat sapien, ut ornare ligula. Ut
+                    bibendum nibh sit amet risus pharetra, sed rutrum lorem aliquam. Duis lorem sapien, feugiat sit amet
+                    erat in, bibendum egestas quam.</p>
+                <p><a class="btn btn-light" href="#">Button</a></p>
+            </div>
+        </div>
+    </section>
+</div>
 
 </body>
 </html>

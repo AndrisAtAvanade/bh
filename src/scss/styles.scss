@@ -29,10 +29,30 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #7952b3;
+$bh-primary:      #1446A0;
+$bh-secondary:    #F73388;
+$bh-tertiary:     #E28413;
+$bh-black:        #1D1E18;
+$bh-beige:        #FBF5F3;
+$bh-midGrey:      #666666;
+$bh-lightGrey:    #BEC0CE;
+$bh-success:      #009B51;
+$bh-warning:      #FFAE11;
+$bh-danger:       #F31155;
+
+$body-color:      $bh-black;
+$body-bg:         $bh-beige;
+$border-radius:   .4rem;
+
+$primary:       $bh-primary;
+$secondary:     $bh-secondary;
+$tertiary:      $bh-tertiary;
+$success:       $bh-success;
+$warning:       $bh-warning;
+$danger:        $bh-danger;
+/*$info:          $cyan;
+$light:         $gray-100;
+$dark:          $gray-900;*/
 
 // Required
 @import "~bootstrap/scss/functions";
@@ -53,8 +73,8 @@ $success: #7952b3;
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
-// @import "~bootstrap/scss/nav";
-// @import "~bootstrap/scss/navbar"; // Requires nav
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar"; // Requires nav
 // @import "~bootstrap/scss/card";
 // @import "~bootstrap/scss/breadcrumb";
 // @import "~bootstrap/scss/accordion";
@@ -85,3 +105,5 @@ $success: #7952b3;
 //
 
 @import "icon-list";
+@import "utils";
+@import "nav";
