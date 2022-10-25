@@ -1,5 +1,18 @@
-.bg-primary {
+h1, h2, h3 {
+  color: $bh-primary;
+}
+
+.bg-primary, .bg-dark {
   color: white;
+
+  h1, h2, h3 {
+    color: white;
+  }
+}
+
+.bh-bg-line {
+  background: url("/static/img/bg-line.png") repeat-y center 0,
+  url("/static/img/bg-dot.png") no-repeat center 10px;
 }
 
 
